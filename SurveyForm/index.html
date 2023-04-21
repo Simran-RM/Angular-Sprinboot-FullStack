@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SWE 642</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+        <link rel="stylesheet" href="style_index.css">
+    
+    </head>
+
+    <body>
+
+<!-- Links (sit on top) -->
+        <div id="background-img" class="background-img" ></div>
+
+        <div class="w3-top">
+            <div class="w3-row w3-padding" style="background-color: #006633">
+                <div class="w3-col s3">
+                    <a href="#" class="w3-button w3-blockw3-cadmiumgreen" style="color:#FFCC33">HOME</a>
+                </div>
+                <div class="w3-col s3">
+                    <a href="#about" class="w3-button w3-blockw3-cadmiumgreen" style="color:#FFCC33">ABOUT</a>
+                </div>
+                <div class="w3-col s3">
+                    <a href="#menu" class="w3-button w3-block w3-cadmiumgreen" style="color:#FFCC33" >HW Links</a>
+                </div>
+    
+            </div>
+        </div>
+
+<!-- Header with image -->
+        <header class="bgimg w3-display-container w3-sand  " id="home">
+            <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+                <span class="w3-tag" style="font-size:20px; background-color:#006633" >George Mason University</span>
+            </div>
+            <div class="w3-display-middle w3-center">
+                <span class="w3-text-white" style="font-size:60px"><strong></span>
+            </div>
+            <div class="w3-display-bottomright w3-center w3-padding-large">
+                <span class="w3-text-white">4400 University Drive</span>
+            </div>
+        </header>
+
+        <br>
+
+<!-- Add a background color and large text to the whole page -->
+        <div class="w3-sand  w3-medium">
+
+<!-- About Container -->
+            <div class="w3-container" id="about">
+                <div class="w3-content" style="max-width:700px">
+                    <h5 class="w3-center w3-padding-80"><span class="w3-tag w3-wide"style = "background-color:#006633">ABOUT THE UNIVERSITY</span></h5>
+                    <p>George Mason University (George Mason, Mason, or GMU) is a public research university in Fairfax County, Virginia.The university was originally founded in 1949 as a northern branch of the University of Virginia. Named after Founding Father of the United States George Mason in 1959, it became an independent university in 1972. The school has since grown into the largest public university in the Commonwealth of Virginia.Mason operates four campuses in Virginia (Fairfax, Arlington, Front Royal, and Prince William), as well as a campus in Incheon, South Korea. The flagship campus is in Fairfax.</p>
+                    <h6 class="w3-center w3-padding-50"><span class="w3-tag w3-wide"style = "background-color:#006633">ABOUT ME</span></h6>
+                    <img src="me.jpg"  style="width:250px;height:250px;display:block;" class="w3-margin-top"><br>
+                    <p style="display:inline;">Hello, my name is Simran R Manturgimath. I graduated in computer science from India. I am now in my third semester in the George Mason CS Masters program.This semester I have taken the SWE 642 course and I am extremely ebullient to learn the bits and bytes of the world wide web!! </p>
+                </div>
+            </div>
+        </div>
+
+<!-- Menu Container -->
+
+        <div class="w3-sand  w3-medium">
+            <div class="w3-container" id="menu" \>
+                <div class="w3-content" style="max-width:700px">
+ 
+                    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide"style = "background-color:#006633">HOMEWORK LINKS</span></h5>
+                    <table class="w3-table w3-striped w3-border w3-hoverable">
+                        <tr>
+                            <th style="color:Green"><u><b>Date</b></th>
+                            <th style="color:Green"><u><b>Assignment Link</b></th>
+  
+                        </tr>
+                        <tr>
+                            <td>14th September 2022</td>
+                            <td><a href="info.html" target="_blank">CS Department Information</a><br><a href="survey.html" target="_blank">GMU Survey Form</a></td>
+                            
+ 
+                        </tr>
+                    </table>
+                    <br>
+                </div>
+            </div> 
+        </div>
+  
+    
+
+<!-- Footer -->
+        <footer class="w3-center  w3-padding-50 w3-large"style="background-color:#006633;">
+            <img src="logo1.png" style="display:inline;width:50px;height:50px;">
+            <p style="display:inline;color:#FFCC33;">George Mason University <a href="https://www.gmu.edu/" title="GMU" target="_blank" class="w3-hover-text-green">gmu.edu</a></p>
+        </footer>
+
+        <script>
+    // Tabbed Menu
+            function openMenu(evt, menuName) 
+            {
+                var i, x, tablinks;
+                x = document.getElementsByClassName("menu");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablink");
+                for (i = 0; i < x.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+                }
+                document.getElementById(menuName).style.display = "block";
+                evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+            }
+            document.getElementById("myLink").click();
+        </script>
+
+    </body>
+</html>
+
